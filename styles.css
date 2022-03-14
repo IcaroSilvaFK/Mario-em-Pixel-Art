@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ropa: #0a0a8e;
+  --macacao: #931111;
+  --cabelo: #3c1f11;
+  --botoes: #a7930d;
+  --pele: #c3a185;
+  --sombrabone:#FC8181;
+  --preto: #000;
+  --sombra : rgba(0,0,0,0.3)
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.mario {
+  width: 10px;
+  height: 10px;
+
+  box-shadow: 
+  /* * Linha 1*/ 
+  -20px 0 var(--macacao),
+  -30px 0 var(--macacao),
+  -40px 0 var(--macacao),
+  -50px 0 var(--macacao),
+    /* * Linha 2*/ 
+  -60px 10px var(--macacao),
+  -50px 10px var(--macacao),
+  -40px 10px var(--macacao),
+  -30px 10px var(--macacao),
+  -20px 10px var(--macacao),
+  -10px 10px var(--macacao),
+    0 10px var(--macacao),
+  10px 10px var(--macacao),
+      /* * sombra do boné */ 
+    0 12px var(--sombrabone),
+    10px 12px var(--sombrabone),
+    /* * Linha 3*/
+  -60px 20px var(--cabelo),
+  -50px 20px var(--cabelo),
+  -40px 20px var(--cabelo),
+  -30px 20px var(--pele),
+  -20px 20px var(--preto),
+  -10px 20px var(--pele),
+  /* * Linha 4 */
+  -60px 30px var(--cabelo),
+  -50px 30px var(--cabelo),
+  -40px 30px var(--cabelo),
+  -30px 30px var(--pele),
+  -20px 30px var(--preto),
+  -10px 30px var(--pele),
+    /* * Linha 5 */
+  -70px 40px var(--cabelo),
+  -60px 40px var(--pele),
+  -50px 40px var(--cabelo),
+  -40px 40px var(--pele),
+  -30px 40px var(--pele),
+  -20px 40px var(--preto),
+  -10px 40px var(--pele),
+    0 40px var(--pele),
+  10px 40px var(--pele),
+    /* * Linha 6 */
+  -70px 50px var(--cabelo),
+  -60px 50px var(--pele),
+  -50px 50px var(--cabelo),
+  -40px 50px var(--cabelo),
+  -30px 50px var(--pele),
+  -20px 50px var(--pele),
+  -10px 50px var(--cabelo),
+    0 50px var(--pele),
+  10px 50px var(--pele),
+  20px 50px var(--pele),
+  /* * Linha 7 */
+  -70px 60px var(--cabelo),
+  -60px 60px var(--cabelo),
+  -50px 60px var(--pele),
+  -40px 60px var(--pele),
+  -30px 60px var(--pele),
+  -20px 60px var(--cabelo),
+  -10px 60px var(--cabelo),
+    0 60px var(--cabelo),
+  10px 60px var(--cabelo),
+  /* * Linha 8 */
+  -50px 70px var(--pele),
+  -40px 70px var(--pele),
+  -30px 70px var(--pele),
+  -20px 70px var(--pele),
+  -10px 70px var(--pele),
+     0 70px var(--pele),
+    /* * Linha 9*/
+  -60px 80px var(--ropa),
+  -50px 80px var(--ropa),
+  -40px 80px var(--macacao),
+  -30px 80px var(--ropa),
+  -20px 80px var(--ropa),
+  /* * Linha 10*/
+  -70px 90px var(--ropa),
+  -60px 90px var(--ropa),
+  -50px 90px var(--ropa),
+  -40px 90px var(--macacao),
+  -30px 90px var(--ropa),
+  -20px 90px var(--macacao),
+  -10px 90px var(--ropa),
+    0  90px var(--ropa),
+  10px 90px var(--ropa),
+  /* * Linha 11*/
+  -80px 100px var(--ropa),
+  -70px 100px var(--ropa),
+  -60px 100px var(--ropa),
+  -50px 100px var(--ropa),
+  -40px 100px var(--macacao),
+  -30px 100px var(--ropa),
+  -20px 100px var(--macacao),
+  -10px 100px var(--ropa),
+    0  100px var(--ropa),
+  10px 100px var(--ropa),
+  20px 100px var(--ropa),
+  /* * Linha 12*/
+  -80px 110px var(--pele),
+  -70px 110px var(--pele),
+  -60px 110px var(--ropa),
+  -50px 110px var(--ropa),
+  -40px 110px var(--macacao),
+  -30px 110px var(--macacao),
+  -20px 110px var(--macacao),
+  -10px 110px var(--ropa),
+    0   110px var(--ropa),
+  10px 110px var(--pele),
+  20px 110px var(--pele),
+  /* * Linha 13*/
+  -80px 120px var(--pele),
+  -70px 120px var(--pele),
+  -60px 120px var(--pele),
+  -50px 120px var(--macacao),
+  -40px 120px var(--botoes),
+  -30px 120px var(--macacao),
+  -20px 120px var(--botoes),
+  -10px 120px var(--macacao),
+    0   120px var(--pele),
+  10px  120px var(--pele),
+  20px 120px var(--pele),
+  /* * Linha 14*/
+  -80px 130px var(--pele),
+  -70px 130px var(--pele),
+  -60px 130px var(--macacao),
+  -50px 130px var(--macacao),
+  -40px 130px var(--macacao),
+  -30px 130px var(--macacao),
+  -20px 130px var(--macacao),
+  -10px 130px var(--macacao),
+    0   130px var(--macacao),
+  10px 130px var(--pele),
+  20px 130px var(--pele),
+  /* * Linha 15*/
+  -60px 140px var(--macacao),
+  -50px 140px var(--macacao),
+  -40px 140px var(--macacao),
+  -20px 140px var(--macacao),
+  -10px 140px var(--macacao),
+    0   140px var(--macacao),
+  /* * Linha 16*/
+ 
+  -70px 150px var(--cabelo),
+  -70px 147px var(--sombra),
+  -60px 150px var(--cabelo),
+  -50px 150px var(--cabelo),
+  -10px 150px var(--cabelo),
+    0   150px var(--cabelo),
+  10px 150px var(--cabelo),
+  10px 147px var(--sombra),
+  /* * Linha 17*/
+
+  -80px 160px var(--cabelo),
+  -80px 157px var(--sombra),
+  -70px 160px var(--cabelo),
+  -60px 160px var(--cabelo),
+  -50px 160px var(--cabelo),
+  -10px 160px var(--cabelo),
+    0   160px var(--cabelo),
+  10px 160px var(--cabelo),
+  20px 160px var(--cabelo),
+  20px 157px var(--sombra);
+
+}
